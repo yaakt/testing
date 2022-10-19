@@ -13,7 +13,6 @@ class Calculator:
         self.records = [] #хранение записей
         self.current_date = dt.date.today()
         self.days_ago = self.current_date - dt.timedelta(7)
-
     def add_record(self, record):
         self.records.append(record)
 

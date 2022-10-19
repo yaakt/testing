@@ -22,6 +22,7 @@ def test_CashCalculator(cash_calc):
 the_list = [{'amount': 145, 'comment': 'кофе','date':'08.11.2019'},
              {'amount': 300, 'comment': 'Серёге за обед'},
              {'amount': 3000,'comment': 'бар в Танин др','date':'08.11.2019'}]
+
 @pytest.mark.parametrize("list_", the_list)
 def test__init__(list_):
     result = Calc.Record(**list_)
