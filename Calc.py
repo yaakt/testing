@@ -34,7 +34,7 @@ class Calculator:
         return sum(week_stats)
 
 
-class CashCalculator(Calculator)
+class CashCalculator(Calculator):
     rub = 1
     dollar = 60.73
     euro = 59.79
