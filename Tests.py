@@ -16,7 +16,6 @@ def cash_calc():
     cash_calculator.add_record(Calc.Record(amount=300, comment='Серёге за обед'))
     cash_calculator.add_record(Calc.Record(amount=3000, comment='бар в Танин др', date='08.11.2019'))
     return cash_calculator.get_today_cash_remained(currency='rub')
-
 def test_CashCalculator(cash_calc):
     assert cash_calc == 'You can spend 555.0 руб'
 
