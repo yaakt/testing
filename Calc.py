@@ -7,7 +7,6 @@ class Record:
             self.date = dt.date.today()
         else:
             self.date = dt.datetime.strptime(date, '%d.%m.%Y').date()
-
 class Calculator:
     def __init__(self, limit):
         self.limit = limit #дневной лимит трат или калорий
