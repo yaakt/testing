@@ -3,7 +3,7 @@ import Calc
 import pytest
 
 
-@pytest.fixture()
+
 def test_cash_calculator_add_records():
     record = Calc.Record(amount=300, comment='Серёге за обед')
     Calc.CashCalculator.add_record(record)
@@ -16,7 +16,7 @@ def cash_calc():
     cash_calculator.add_record(Calc.Record(amount=300, comment='Серёге за обед'))
     cash_calculator.add_record(Calc.Record(amount=3000, comment='бар в Танин др', date='08.11.2019'))
     return cash_calculator.get_today_cash_remained(currency='rub')
-def test_CashCalculator(cash_calc):
+def test_сash_сalculator(cash_calc):
     assert cash_calc == 'You can spend 555.0 руб'
 
 the_list = [{'amount': 145, 'comment': 'кофе','date':'08.11.2019'},
